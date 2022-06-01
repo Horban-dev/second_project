@@ -1,0 +1,101 @@
+.footer {
+    background-color: #FEF9F2;
+    &__wrapper {
+        margin: 0 86px;
+        &-plus {
+            display: flex;
+        gap: 50px;
+        padding: 140px 24px 247px 24px;
+        }
+    }
+    &__blocks {
+        &-list {
+            width: 166px;
+            list-style-type: none;
+            
+        li {
+            margin-bottom: 22px;
+            @include text;
+        }
+        }
+        &-menu {
+            margin-bottom: 45px;
+        }
+        &-utility {
+            margin-bottom: 45px;
+        }
+    }
+    &__text {
+        margin-top: 27px;
+        @include text;
+    }
+    &__box {
+        background-color: $main-color;
+        border-radius: 40px;
+        overflow: hidden;
+        position: relative;
+    }
+    &__items {
+        position: relative;
+        align-items: center;
+        padding: 70px 63px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 34px;
+        color: $title-color;
+        display: inline;
+    }
+    &__buttons {
+        &-black {
+            margin-top: 24px;
+            background-color: #000;
+            border: none;
+            border-radius: 12px;
+            width: 292px;
+            height: 71px;
+            font-family: $DM;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 20px;
+            color: #fff;
+        }
+        &-white {
+            font-weight: 700;
+            width: 292px;
+            height: 71px;
+            margin-top: 24px;
+            font-size: 18px;
+            line-height: 20px;
+            border-radius: 12px;
+            border: none;
+            background-color: #fff;
+            color: #000;
+        }
+    }
+    &__right {  
+    position: absolute;
+    top: -165px;
+    left: -30%;
+    }
+    &__left {
+        position: absolute;
+        top: 162px;
+        right: -32%;
+    }
+    &__divider {
+        height: 2px;
+        width: 1220px;
+        background-color: $text-color;
+    }
+    &__bottom {
+        text-align: center;
+        margin-top: 33px;
+        color: $text-color;
+        span {
+            text-decoration-line: underline;
+            color: $title-color;
+        }
+    }
+}

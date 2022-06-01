@@ -1,0 +1,35 @@
+@import 'base/variables';
+
+*{
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+@mixin text {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #6E6E6E;
+}
+
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.body {
+    width: 1440px;
+}
+
+@import 'blocks/nav';
+@import 'blocks/main';
+@import 'blocks/about';
+@import 'blocks/result';
+@import 'blocks/video';
+@import 'blocks/hth';
+@import 'blocks/join';
+@import 'blocks/news';
+@import 'blocks/footer';

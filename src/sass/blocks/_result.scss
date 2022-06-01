@@ -1,0 +1,74 @@
+.result {
+    &__wrapper {
+        margin: 100px 0;
+        display: grid;
+        grid-template-columns: 636px 584px;
+        column-gap: 110px;
+    }
+    &__left {
+        /* margin: 87px 0 87px 110px; */
+        padding: 87px 110px 87px 110px;
+    }
+    &__title {
+        font-family: 'DM Sans';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 22px;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        color: $main-color;
+    }
+    &__subtitle {
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 58px;
+        color: $title-color;
+    }
+    &__items {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        -moz-column-gap: 50px;
+        column-gap: 50px;
+        
+        
+        &-block {
+            display: flex;
+            margin-bottom: 26px;
+        }
+        &-bloks {
+            width: 125px;
+            height: 76px;
+            
+        }
+        &-icons {
+            margin-right: 16px;
+        }
+        &-title {
+            font-weight: 700;
+            font-size: 38px;
+            line-height: 44px;
+            color: $title-color;
+        }
+        &-subtitle {
+            @include text;
+        }
+        
+    }
+    &__button {
+        padding-top: 51px;
+    }
+    &__donate {
+        background-color: $main-color;
+        border: none;
+        border-radius: 12px;
+        width: 142px;
+        height: 54px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        color: $title-color;
+    }
+
+}

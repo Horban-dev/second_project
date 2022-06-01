@@ -1,0 +1,96 @@
+.video {
+    background: linear-gradient(#FFD4A4 49.9%, #fff 50.1%);
+
+    &__wrapper {
+        margin: 0 auto;
+    }
+    &__first {
+        padding: 55px 244px 0;
+    }
+    &__subtitle {
+        text-align: center;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        @include text;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 22px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 58px;
+        text-align: center;
+    }
+    &__buttons {
+        display: flex;
+        justify-content: center;
+        &-black {
+            margin-right: 26px;
+            background-color: #000;
+            border: none;
+            border-radius: 12px;
+            width: 180px;
+            height: 71px;
+            font-family: $DM;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 20px;
+            color: #fff;
+        }
+        &-white {
+            font-weight: 700;
+            width: 225px;
+            height: 73px;
+            font-size: 18px;
+            line-height: 20px;
+            border-radius: 12px;
+            border: none;
+            background-color: #fff;
+            color: #000;
+        }
+    }
+    &__image {
+        margin: 64px 110px;
+        border-radius: 50px;
+        img {
+            border-radius: 55px;
+        }
+    }
+    &__items {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 48px;
+        margin: 80px 110px
+    }
+    &__left {
+        width: 596px;
+        &-title {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 34px;
+            color: $title-color;
+        }
+        &-text {
+            @include text;
+        }
+    }
+    &__right {
+        width: 596px;
+        &-title {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 34px;
+            color: $title-color;
+        }
+        &-text {
+            @include text;
+        }
+    }
+    &__divider {
+        height: 2px;
+        margin-bottom: 0;
+        background-color: $text-color;
+    }
+
+}

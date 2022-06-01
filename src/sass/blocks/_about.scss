@@ -1,0 +1,136 @@
+.about {
+    background-color: #FEF9F2;
+    &__wrappers {     
+        width: 1440px;
+    }
+    &__elements {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        padding-top: 130px;
+    }
+    &__main {
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 80px;
+        color: $title-color;
+        span {
+            color: $main-color;
+        }
+    }
+    &__name {
+        @include text;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 22px;
+        color: $text-color;
+        margin-top: 5px;
+    }
+
+    &__divider {
+        height: 2px;
+        margin-top: 50px;
+        background-color: $text-color;
+        
+    }
+    &__wrapper {
+        margin: 80px 110px 110px 110px;
+        display: grid;
+        grid-template-columns: 596px 596px;
+        gap: 14px;
+    }
+    &__us {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 22px;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        color: $main-color;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 58px;
+        padding: 40px 79px 17px 0;
+    }
+    &__subtitle {
+        @include text;
+    }
+    &__first {
+        img {
+            margin-top: 56px;
+            width: 596px;
+            height: 530px;
+        }
+    }
+    &__second {
+        img {
+            margin-top: 32px;
+            width: 596px;
+            height: 391px;
+        }
+    }
+
+    &__buttons {
+        padding: 1.28px 0 0.72px 235px;
+        &-f {
+            background-color: $main-color;
+            border: none;
+            border-radius: 12px;
+            width: 180px;
+            height: 71px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 18px;
+            color: $title-color;
+            margin-right: 23px;
+        }
+        &-w {
+            font-weight: 700;
+            width: 153px;
+            height: 73px;
+            font-size: 18px;
+            line-height: 20px;
+            border-radius: 12px;
+            border: none;
+            background-color: #fff;
+        }
+    }
+    &__third {
+        
+        img {
+            margin-top: 117px;
+            width: 596px;
+            height: 749px;
+        }
+    }
+    &__right-subtitle {
+        @include text;
+        margin: 50px 4px 0 12px;
+    }
+    &__list {
+        
+        margin: 20px 0 44px 12px;
+        :before {
+            content: '';
+            background-image: url('../../icons/galka.svg');
+            position: absolute;
+            border-radius: 100%;
+            width: 25px;
+            height: 25px;
+            background-color: $main-color;
+            left: 0px; 
+            top: 50%;
+            transform: translateY(-50%);
+        } 
+        li {
+            position: relative;
+           list-style-type: none;
+            margin-bottom: 25px;
+            list-style: 25px 25px 100% $main-color;
+            padding-left: 45px;            
+        }
+    }
+    
+        
+}
